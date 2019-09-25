@@ -10,3 +10,9 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 }
+
+strong {
+    color: #33485e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
