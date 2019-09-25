@@ -3,3 +3,10 @@ body {
   font-size: 1em;
   color: #444;
 }
+
+h1 {
+    color: #33485e;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
