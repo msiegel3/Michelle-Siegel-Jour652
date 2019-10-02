@@ -8,9 +8,18 @@ body {
   font-weight: 400;
 }
 
+#container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* name */
-h1 {
+#name {
+  border-bottom: 1px solid #33485e;
   color: #33485e;
+  min-width: 300px;
+  margin: 0 auto;
   font-size: 3em;
   text-align: center;
   text-transform: uppercase;
