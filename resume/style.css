@@ -11,8 +11,9 @@ body {
 /* container */
 #container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 /* name */
@@ -28,9 +29,12 @@ body {
 }
 
 /* title */
-strong {
+#title {
   color: #33485e;
   font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -40,7 +44,7 @@ strong {
   color: #fff;
   font-size: 1.5em;
   font-weight: 400;
-  margin: 20px 0px 10px 0px;
+  margin: 20px 0 10px 0;
   min-width: 300px;
   text-transform: uppercase;
   width: 70%;
@@ -63,10 +67,40 @@ strong {
   font-size: 1em;
   font-style: italic;
   font-weight: 400;
-  margin: 2px 0px 0px 0px;
+  margin-top: 2px;
 }
 
 /* contact info, skills, education */
 ul {
   font-size: 1em;
+}
+
+/* description */
+.description {
+  margin: 10px 0;
+}
+
+/* menu */
+.menu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* degrees */
+#degrees {
+  margin-top: 5px;
+}
+
+/* do */
+#do {
+  margin-top: 5px;
+}
+
+/* top */
+.top {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  min-width: 300px;
+  width: 60%;
 }
