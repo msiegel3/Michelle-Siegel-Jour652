@@ -19,11 +19,12 @@ body {
 #name {
   border-bottom: 1px solid #33485e;
   color: #33485e;
-  min-width: 300px;
-  margin: 0 auto;
   font-size: 3em;
+  margin: 0 auto;
+  min-width: 300px;
   text-align: center;
   text-transform: uppercase;
+  width: 60%;
 }
 
 /* title */
@@ -39,7 +40,10 @@ strong {
   color: #fff;
   font-size: 1.5em;
   font-weight: 400;
+  margin: 20px 0px 10px 0px;
+  min-width: 300px;
   text-transform: uppercase;
+  width: 70%;
 }
 
 /* job titles */
@@ -50,7 +54,7 @@ strong {
 
 /* job organizations */
 .organization {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
@@ -59,6 +63,7 @@ strong {
   font-size: 1em;
   font-style: italic;
   font-weight: 400;
+  margin: 2px 0px 0px 0px;
 }
 
 /* contact info, skills, education */
