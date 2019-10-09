@@ -11,8 +11,8 @@ body {
 /* container */
 #container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
     padding-bottom: 50px;
 }
 
@@ -64,10 +64,10 @@ body {
 
 /* job dates */
 .date {
+  margin-top: 2px;
   font-size: 1em;
   font-style: italic;
   font-weight: 400;
-  margin-top: 2px;
 }
 
 /* contact info, skills, education */
