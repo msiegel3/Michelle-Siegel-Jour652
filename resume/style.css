@@ -8,6 +8,7 @@ body {
   font-weight: 400;
 }
 
+/* container */
 #container {
     width: 100%;
     max-width: 1000px;
@@ -33,7 +34,7 @@ strong {
 }
 
 /* section titles */
-h2 {
+.sectionheader {
   background-color: #33485e;
   color: #fff;
   font-size: 1.5em;
@@ -42,19 +43,19 @@ h2 {
 }
 
 /* job titles */
-h3 {
+.jobtitle {
   font-size: 1.5em;
   font-weight: 600;
 }
 
 /* job organizations */
-h4 {
+.organization {
   font-size: 1.5em;
   font-weight: 400;
 }
 
 /* job dates */
-h5 {
+.date {
   font-size: 1em;
   font-style: italic;
   font-weight: 400;
