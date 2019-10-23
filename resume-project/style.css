@@ -13,9 +13,25 @@ h2 {
   margin: 15px 0px;
 }
 
-/* navigation bar */
+/* contact links */
+i {
+  padding: 15px;
+}
+
+/* navigation */
 nav {
   background-color: #777;
+  margin: 0 auto;
+  width: 75%;
+  max-width: 1000px;
+}
+
+/* container */
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 75%;
+  max-width: 1000px;
 }
 
 /* footer */
@@ -27,7 +43,7 @@ nav {
   overflow: hidden;
 }
 
-/* jobs */
+/* experience */
 .job {
   font-weight: 700;
   margin-bottom: 5px;
@@ -37,8 +53,7 @@ nav {
 #about {
   background-color: #999;
   margin-bottom: 10px;
-  padding-top: 10px;
-  width: 100%;
+  padding: 10px 10px 0px 10px;
 }
 
 /* contact links */
@@ -75,22 +90,22 @@ nav {
   max-width: 200px;
 }
 
-/* banner */
+/* banner image */
 #banner img {
   height: auto;
-  max-width: 1600px;
-  width: 100%;
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* footer */
 #footer {
   background-color: #999;
   padding: 10px 0px;
-  width: 100%;
 }
 
 /* responsive design... headshot disappears if screen is too small */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 700px) {
   #about img {
     display: none;
   }
