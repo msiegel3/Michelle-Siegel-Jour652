@@ -1,0 +1,104 @@
+/* styles for my resume */
+
+/* default */
+body {
+  color: #444;
+  font-family: 'Lato', arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+nav {
+  background-color: #777;
+}
+
+#about a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#about a:link {
+  color: #008080;
+}
+
+#about a:hover {
+  color: #444;
+}
+
+#about a:visited {
+  color: #444;
+}
+
+#about a:active {
+  color: #FFF;
+}
+
+#banner img {
+  height: auto;
+  max-width: 1600px;
+  width: 100%;
+}
+
+#about {
+  background-color: #999;
+  padding-top: 10px;
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#about img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0px 10px 10px 10px;
+  float:right;
+}
+
+.crop {
+    overflow: hidden;
+    border-color: #008080;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+  display:hidden
+}
+
+i {
+  padding: 15px
+}
+
+h2 {
+  margin: 15px 0px;
+}
+
+#footer {
+  background-color: #999;
+  padding-top: 10px;
+  font-size: 1em;
+  font-weight: 400;
+  width: 100%;
+}
+
+.job {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#title {
+  color: #008080;
+}
+
+#organization {
+  font-style: italic;
+}
+
+@media screen and (max-width: 575px) {
+  #about img {
+    display: none;
+  }
+
+}
