@@ -1,0 +1,111 @@
+/* styles for my resume */
+
+/* default */
+body {
+  color: #444;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* container */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 50px;
+}
+
+/* name */
+#name {
+  border-bottom: 1px solid #33485e;
+  color: #33485e;
+  font-size: 3em;
+  margin: 0 auto;
+  min-width: 300px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+/* title */
+#title {
+  color: #33485e;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* section titles */
+.sectionheader {
+  background-color: #33485e;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+  min-width: 300px;
+  text-transform: uppercase;
+  width: 70%;
+}
+
+/* job titles */
+.jobtitle {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* job organizations */
+.organization {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+/* job dates */
+.date {
+  margin-top: 2px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* contact info, skills, education */
+ul {
+  font-size: 1em;
+}
+
+/* description */
+.description {
+  margin: 10px 0;
+}
+
+/* menu */
+.menu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* menu inline */
+.menu li {
+  display: inline;
+}
+
+/* degrees */
+#degrees {
+  margin-top: 5px;
+}
+
+/* do */
+#do {
+  margin-top: 5px;
+}
+
+/* top */
+.top {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  min-width: 300px;
+  width: 60%;
+}

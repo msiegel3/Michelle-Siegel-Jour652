@@ -22,16 +22,16 @@ i {
 nav {
   background-color: #777;
   margin: 0 auto;
+  max-width: 991.98px;
   width: 75%;
-  max-width: 1000px;
 }
 
 /* container */
 .container {
   margin: 0 auto;
+  max-width: 991.98px;
   padding: 0;
   width: 75%;
-  max-width: 1000px;
 }
 
 /* footer */
@@ -93,9 +93,9 @@ nav {
 /* banner image */
 #banner img {
   height: auto;
-  width: 1600px;
-  max-width: 100%;
   margin: 0 auto;
+  max-width: 100%;
+  width: 1600px;
 }
 
 /* footer */
@@ -105,7 +105,7 @@ nav {
 }
 
 /* responsive design... headshot disappears if screen is too small */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767.98px) {
   #about img {
     display: none;
   }
