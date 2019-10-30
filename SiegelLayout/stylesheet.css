@@ -1,0 +1,38 @@
+blockquote {
+  border: 4px dotted #782f40;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  margin: 0px 30px;
+  padding: 10px;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+p {
+  color: #555;
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+.image {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+#byline {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+#content {
+  margin: 0 auto;
+  width: 900px;
+}
