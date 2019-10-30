@@ -1,0 +1,56 @@
+/* styles for my resume */
+
+blockquote {
+  border: 4px dotted #8A2BE2;
+  font-size: 24px;
+  font-style: italic;
+  margin: 24px;
+  padding: 12px;
+}
+
+h1 {
+  font-family: "Times New Roman";
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "Times New Roman";
+  font-size: 21px;
+  font-style: italic;
+}
+
+h3 {
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+h4 {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+h5 {
+  font-family: Helvetica;
+  font-size: 13px;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.image {
+  height: auto;
+  max-width: 900px;
+}
+
+#byline {
+  font-family: "Times New Roman";
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#container {
+  margin: 0 auto;
+  width: 900px;
+}
