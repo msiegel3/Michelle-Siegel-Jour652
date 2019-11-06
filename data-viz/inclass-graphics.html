@@ -1,0 +1,200 @@
+<!doctype HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Bootstrap Template</title>
+        <meta name="description" content="Merrill College of Journalism, UMD">
+        <meta name="author" content="Adam Marton">
+    <!-- Google Font CSS -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Load c3.css -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+    <!-- Load our CSS -->
+      <link href="style.css" type="text/css" rel="stylesheet" >
+    <!-- Load d3.js and c3.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+  </head>
+  <body>
+    <!-- start container -->
+      <div class="container">
+      <!-- first graphic container-->
+        <div class="graphic-container">
+          <h2>Shootings by year</h2>
+          <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticeable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistently high.</p>
+          <div id="myLineChart"></div>
+          <em>Source: Data collected by The Washington Post</em>
+        </div>
+      <!-- END first graphic container -->
+      <br><br>
+      <!-- second graphic container-->
+        <div class="graphic-container">
+          <h2>Shootings by type</h2>
+          <p>Targeted shootings are by far the most common type...</p>
+          <div id="shootingsByTypeChart"></div>
+          <em>Source: Data collected by The Washington Post</em>
+        </div>
+      <!-- END second graphic container -->
+      <br><br>
+      <!-- third graphic container-->
+        <div class="graphic-container">
+          <h2>How often officers were present</h2>
+          <p>School resource officers were commonly not present for school shootings.</p>
+          <div id="resourceOfficersChart"></div>
+          <em>Source: Data collected by The Washington Post</em>
+        </div>
+      <!-- END third graphic container -->
+      <br><br>
+      <!-- fourth graphic container-->
+        <div class="graphic-container">
+          <h2>What race are school shooters likely to be?</h2>
+          <div id="shooterRaceChart"></div>
+          <em>Source: Data collected by The Washington Post</em>
+        </div>
+      <!-- END fourth graphic container -->
+      <br><br>
+      <!-- fifth graphic container-->
+        <div class="graphic-container">
+          <h2>Where do school shootings occur?</h2>
+          <div id="whereChart"></div>
+          <em>Source: Data collected by The Washington Post</em>
+        </div>
+      <!-- END fifth graphic container -->
+      <br><br>
+      <!-- sixth graphic container-->
+        <div class="graphic-container">
+          <h2>Examining the carnage</h2>
+          <div id="killedByYearChart"></div>
+          <em>Source: Data collected by The Washington Post</em>
+        </div>
+      <!-- END sixth graphic container -->
+      </div>
+    <!-- end container -->
+    <!-- c3 script -->
+      <script type="text/javascript">
+
+      //CHART 1
+      var chart = c3.generate({
+       bindto: '#myLineChart',
+       data: {
+         x: 'x',
+         columns: [
+            ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+            ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
+         ]
+       },
+       color: {
+         pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+       }
+      });
+
+      //CHART 2
+      var chart2 = c3.generate({
+      bindto: '#shootingsByTypeChart',
+      data: {
+        columns: [
+          ['Targeted', 130],
+          ['indiscriminate', 42],
+          ['Accidental', 25],
+          ['Targeted and indiscriminate', 5],
+          ['Public suicide', 4],
+          ['Unclear', 3],
+          ['hostage suicide', 2],
+          ['Accidental or targeted', 2],
+          ['Public suicide (attempted)', 1]
+        ],
+        type: 'bar'
+      },
+      color: {
+        pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+      }
+      });
+
+      //CHART 3
+      var chart3 = c3.generate({
+       bindto: '#resourceOfficersChart',
+       data: {
+         // iris data from R
+         columns: [
+           ['Present', 35],
+           ['Not present', 65],
+         ],
+         type : 'pie',
+         onclick: function (d, i) { console.log("onclick", d, i); },
+         onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+       },
+       color: {
+         pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+       }
+       });
+
+       //CHART 4
+       var chart4 = c3.generate({
+        bindto: '#shooterRaceChart',
+        data: {
+          // iris data from R
+          columns: [
+            ['Asian', 1],
+            ['American Indian', 3],
+            ['Black', 35],
+            ['Hispanic', 6],
+            ['White', 60],
+          ],
+          type : 'pie',
+          onclick: function (d, i) { console.log("onclick", d, i); },
+          onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+          onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+        },
+        color: {
+          pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+        }
+        });
+
+        //CHART 5
+        var chart5 = c3.generate({
+        bindto: '#whereChart',
+        data: {
+          columns: [
+            ['City', 101],
+            ['Suburb', 58],
+            ['Town', 24],
+            ['Rural', 31],
+          ],
+          type: 'bar'
+        },
+        color: {
+          pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+        }
+        });
+
+        //CHART 6
+        var chart6 = c3.generate({
+         bindto: '#killedByYearChart',
+         data: {
+           x: 'x',
+           columns: [
+              ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+              ['Killed by year', 14, 4, 5, 1, 5, 3, 9, 9, 1, 5, 1, 3, 2, 32, 3, 6, 0, 2, 5, 21],
+              ['Injuries by year', 35, 3, 22, 7, 7, 9, 17, 16, 17, 5, 4, 6, 9, 8, 13, 14, 2, 18, 15, 44],
+              ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
+           ]
+         },
+         color: {
+           pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+         }
+        });
+      </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
