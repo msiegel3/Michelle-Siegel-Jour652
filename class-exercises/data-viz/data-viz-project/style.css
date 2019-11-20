@@ -1,0 +1,64 @@
+/* default */
+body {
+  color: #444;
+  font-family: 'Lato', arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* navigation */
+nav {
+  margin: 0 auto;
+  max-width: 991.98px;
+  width: 75%;
+}
+
+/*body image*/
+.bodyimage {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* chapter headline */
+.chapterheadline {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+
+/* container */
+.container {
+  margin: 0 auto;
+  max-width: 991.98px;
+  padding: 0;
+  width: 75%;
+}
+
+/* photo caption */
+.photocaption {
+  color: #777;
+  padding: 5px 0px 10px 0px;
+}
+
+/* byline */
+#byline {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* footer */
+#footer {
+  margin-top: 10px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+/* headline */
+#headline {
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 20px;
+  text-align: center;
+}
