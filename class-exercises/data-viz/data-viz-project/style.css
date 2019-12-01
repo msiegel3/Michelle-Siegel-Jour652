@@ -63,7 +63,7 @@ footer {
   background-color: #000;
   color: #FFF;
   font-family: 'PT Serif', serif;
-  height: 100px;
+  height: 75px;
   padding: 25px;
   text-align: center;
   width: 100%;
@@ -167,7 +167,7 @@ nav {
 #heroimage {
   color: #999;
   font-style: italic;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
 }
 
 #deckline {
