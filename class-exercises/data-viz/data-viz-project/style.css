@@ -20,27 +20,9 @@ body {
   font-weight: 400;
 }
 
-img-fluid {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-}
-
 figure {
   display: table;
   margin: 0px auto;
-}
-
-.c3 text {
-  font-family: 'Oswald';
-}
-
-.graphic-container {
-  font-family: 'Oswald';
-}
-
-h3 {
-  font-family: 'Oswald' !important;
 }
 
 figure figcaption {
@@ -69,6 +51,16 @@ footer {
   width: 100%;
 }
 
+h3 {
+  font-family: 'Oswald' !important;
+}
+
+img-fluid {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
 nav {
   font-family: 'Oswald', sans-serif;
   margin: 0 auto;
@@ -90,8 +82,8 @@ nav {
   margin: 0 auto;
 }
 
-#tips {
-  margin-top: 30px;
+.c3 text {
+  font-family: 'Oswald';
 }
 
 .chapterheadline {
@@ -115,27 +107,15 @@ nav {
 }
 
 .chapterheadline-span1 {
-    border: 4px dotted #b80f0a;
-    outline: 4px dotted #1034A6;
-    padding: 5px;
+  border: 4px dotted #b80f0a;
+  outline: 4px dotted #1034A6;
+  padding: 5px;
 }
 
 .chapterheadline-span2 {
-    border: 4px dotted #1034A6;
-    outline: 4px dotted #b80f0a;
-    padding: 5px;
-}
-
-.container-fluid {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-}
-
-.row {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
+  border: 4px dotted #1034A6;
+  outline: 4px dotted #b80f0a;
+  padding: 5px;
 }
 
 .col-sm-12 {
@@ -144,7 +124,14 @@ nav {
   width: 100%;
 }
 
+.container-fluid {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
 .graphic-container {
+  font-family: 'Oswald';
   padding-bottom: 20px;
 }
 
@@ -157,17 +144,17 @@ nav {
   padding: 5px 0px 10px 0px;
 }
 
+.row {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
 #byline {
   font-size: 1.5em;
   font-style: italic;
   padding-bottom: 10px;
   text-align: center;
-}
-
-#heroimage {
-  color: #999;
-  font-style: italic;
-  margin-bottom: 100px;
 }
 
 #deckline {
@@ -186,4 +173,14 @@ nav {
   padding-top: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+#heroimage {
+  color: #999;
+  font-style: italic;
+  margin-bottom: 100px;
+}
+
+#tips {
+  margin-top: 30px;
 }
