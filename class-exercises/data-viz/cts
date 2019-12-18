@@ -1,0 +1,254 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <!--googlefonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,700&display=swap" rel="style.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- JQuery Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<!-- Load our CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <a class="navbar-brand" href="#"></a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#chapter1">part one</a>
+
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#trends">part two</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#trends">part three</a>
+     </li>
+ </div>
+</nav>
+
+<div class="container">
+  <div id="hero"><img src="safekit.jpg" width= 900 height= 550 div class="hero-image">
+  <div class= "caption">A S.A.F.E. kit. Photo courtesy of The Seattle Times.</div>
+
+  <div class="headline">S.A.F.E. IN D.C.? the Accessibility of sexual Assault forensic services</div>
+  <p class="chapter1">Part one: Some background</div>
+  <div class="about">A sexual assault forensic exam is often referred to as a rape kit. The kit is just the container itself. It may hold any of the following:
+<ul>Bags and paper sheets for evidence collection;</ul>
+<ul>Comb;</ul>
+<ul>Documentation forms;</ul>
+<ul>Envelopes;</ul>
+<ul>Instructions;</ul>
+<ul>Materials for blood samples;</ul>
+<ul>Swabs.</ul>
+ A forensic exam is more detailed than your run-of-the-mill check up, and forensic nurses know to look for things others may miss. “Our nurse assess[es] anything that is an injury, pain, tenderness, and then documents it on a body map,” Colleen Gallopin of the District of Columbia Forensic Nurse Examiners explains. “We’ll do a pelvic exam. We’ll do photographs of any injuries, and then take down patient documentation of their report, as certain things are not photographable— pain, for example. Then, based on the patient’s account of what occurred, we will do the physical evidence collection, or the kit.” The exam alone could take upwards of four hours, and does not end when every stretch of skin has been seen. Body parts are swabbed, clothing is collected, and when appropriate, toxicology samples are taken. HIV testing, prophylaxis, and pregnancy prevention are also provided when necessary.</div>
+<div id="hero"><img src="kitcontents.jpg" width= 900 height= 550 div class="hero-image">
+<div class= "caption">The contents of a S.A.F.E. kit. Photo courtesy of TIME.
+<div class="graphic-container">
+<div class="graphic-headline">Of the eight emergency rooms that serve the D.C. public, only one — Medstar Washington Hospital Center — offers rape kit services.</div>
+
+<div class="chapter2">Part two: what is the problem?</div> <br>
+
+<div class="chaptertext">D.C. has a population of 700,000. According to the U.S. Census Bureau, this is the highest it has been since 1975. In the aftermath of a sexual assault, if a survivor requests a forensic exam, they can only have one perfromed at Medstar Washington Hospital Center. If they go to another emergency room in the city, they will likely have to travel by taxi or carsharing service to MWHC. During the busiest times of day, this can take more than an hour. United Medical Center, for example, is almost ten miles from MWHC.
+Further, there are three hospitals in the city affiliated with universities. According to the AAU (American Association of Universities) Campus Climate Survey on Sexual Assault and Sexual Misconduct, and as reported by RAINN, "11.2% of all students experience rape or sexual assault through physical force, violence, or incapacitation (among all graduate and undergraduate students)."
+<br>
+<br>
+<iframe src="https://uploads.knightlab.com/storymapjs/831fcb821b7c5619b0f9d2e266f65147/final-project-map/draft.html" frameborder="0" width="100%" height="800"></iframe>
+
+<p class="chaptertext">Only a forensic nurse can conduct the exam. Forensic nurses complete extensive, specialized training before they can practice. In addition to a year of experience working in critical care, nurses complete 45 hours of classroom instruction and participate in a number of “hands-on” exercises.
+When a patient presents at the Medstar ER seeking care after an assault, they can rely on being seen by a forensic nurse examiner after undergoing the initial emergency department triage. Medstar even has a separate, private room — complete with a door rather than a curtain — solely used for this purpose. The program at Medstar Washington Hospital Center is a partnership between the hospital and the non-profit organization, District of Columbia Forensic Nurse Examiners. But, since it is the sole program in the city, why don’t other area hospitals just train and keep their own SANE nurses on hand? It seems like a simple solution, but a few factors prevent this.
+
+<br>
+
+<!-- first graphic container-->
+ <div class="graphic-container">
+   <h2>Incidents of Rape Reported Per Year</h2>
+   <p>The data depicted in the chart adheres to the old definition of rape, which was updated in 2014. The data is greatly skewed if the new definition is applied.</p>
+   <div id="rapesperYearChart"></div>
+   <em>Source: Data collected by The U.S. Department of Justice</em>
+ </div>
+ <!-- END first graphic container-->
+
+
+ <br><hr><br>
+
+ <div class="graphic-container">
+   <h2>How many Incidents of Sexual Assault are Reported to Police?</h2>
+   <p>Survivors often undergo forensic exams to support police report.</p>
+   <div id="resourceOfficersChart"></div>
+   <em>Source: Data collected by RAINN.</em>
+ </div>
+
+   <!-- c3 script-->
+   <script>
+   //CHART 1
+   var chart = c3.generate({
+     bindto: '#rapesperYearChart',
+     data: {
+       x: 'x',
+       columns: [
+         ['x', 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
+         ['Number of incidents', 94472, 92160, 90750, 89241, 85593, 84175, 85141, 82109, 84864, 91261, 96970],
+       ]
+     },
+     color: {
+       pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+     }
+   });
+
+
+   //CHART 2
+   var chart3 = c3.generate({
+     bindto: '#resourceOfficersChart',
+     data: {
+       // iris data from R
+       columns: [
+         ['Reported', 23],
+         ['Not reported', 77],
+       ],
+       type : 'pie',
+       onclick: function (d, i) { console.log("onclick", d, i); },
+       onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+       onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+     },
+     color: {
+       pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+     }
+   });
+
+</script>
+
+<div class="chapter3">Part three: what can be done?</div> <br>
+  <p class="graphic-text">As one might expect, there is no direct answer to this problem.Funding, naturally, plays a role. A representative from GW Hospital explained The Office of Victims Services within The District’s Mayor’s office is funded by the Department of Justice. In 2008, when the city’s SANE program was reestablished, it opened funding requests for non-profit 501©3 organizations. GW is not a non-profit hospital, so did not meet applicant qualifications. GW will not turn an assault survivor away; they will triage and treat any individual who comes to the emergency room. But, if a patient wants a forensic exam, “GW can and has requested that the SANE nurse from MedStar Washington Hospital Center come to GW and collect evidence,” Susan Griffiths, the Assistant Director of Marketing at George Washington University Hospital said.
+
+
+    <div class="hero" width= 550><img src="askdc.png" width= 550 height= auto div class="photos">
+    <p class= "caption"></p></div>
+
+<p class="chaptertext">DC is, as it turns out, not the only city to approach the situation this way. Kim Day, an RN and the Forensic Nursing Director with the International Association of Forensic Nurses, notes Baltimore used to have only one Forensic Nursing program at Mercy Hospital. Though the Greater Baltimore Medical Center also has a program now, Mercy, like Medstar Washington Hospital Center, will send a forensic nurse to a patient at other hospitals if the patient is unable to be moved. Dallas, Day notes, is an example of a city that has more than one program. But, the city only began employing forensic nurses in the past decade.
+
+Accessibility, though, remains a major concern for Gallopin.
+
+She hopes in the future the partnership between Medstar and DC Sexual Assault Nurse Examiners will continue to strengthen, and the process patients must go through to obtain care will become more smooth. Shortened wait times and streamlining referrals from other hospitals are focus areas for improvement. Providing services in non-hospital settings (like community health clinics), and expanding outreach to the area’s more marginalized populations are also goals.
+
+Above all, DC Forensic Nurse Examiners hopes to increase the public’s knowledge of the work they do: “No matter who survivor turns to first, that individual knows to turn to us.”
+
+<br></p>
+
+</div></div>
+
+  </script>
+
+  <!-- /End main content container -->
+
+
+
+<!-- Footer -->
+<div class="footer">
+      <p class="text-center">CCTS 2019</p>
+</div>
+<!-- //End footer -->
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<!-- graphs -->
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Callie Tansill-Suddath</title>
+    <meta name="description" content="Merrill College of Journalism, UMD">
+    <meta name="author" content="Callie Tansill-Suddath">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+      <!-- Load c3.css -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.7/c3.min.css" rel="stylesheet">
+
+      <!-- Load d3.js and c3.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.7/c3.min.js"></script>
+
+      <!-- Load our CSS -->
+      <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+    <br><hr><br>
+
+      <script>
+      //CHART 1
+      var chart = c3.generate({
+        bindto: '#rapesperYearChart',
+        data: {
+          x: 'x',
+          columns: [
+            ['x', 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
+            ['Number of incidents', 94472, 92160, 90750, 89241, 85593, 84175, 85141, 82109, 84864, 91261, 96970],
+          ]
+        },
+        color: {
+          pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+        }
+      });
+
+
+      //CHART 3
+      var chart3 = c3.generate({
+        bindto: '#resourceOfficersChart',
+        data: {
+          // iris data from R
+          columns: [
+            ['Reported', 23],
+            ['Not reported', 77],
+          ],
+          type : 'pie',
+          onclick: function (d, i) { console.log("onclick", d, i); },
+          onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+          onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+        },
+        color: {
+          pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+        }
+      });
+
+    </script>
+    </div>
+    <!-- /end graphs -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+
+  </html>
